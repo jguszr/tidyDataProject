@@ -19,7 +19,7 @@ for mor information, please visit the course project on : https://www.coursera.o
 
 ### Expected behaviour
 * The ``run_analysis.R`` script must download, extract and handle on it own all operations that leads to the creation of a output file named : ``tidyData.txt`` 
-* Dependencies are loaded at the begging of the script as *required*
+* Dependencies are loaded by the script as *required*
 * output files will be saved locally on the current working directory.
   
   
