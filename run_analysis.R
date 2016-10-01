@@ -1,3 +1,5 @@
+
+
 #run_analisys.R Scrypt
 require(plyr)
 ## getting the fullData, the automated way.
@@ -62,5 +64,5 @@ fullData<-subset(fullData,select=selectedNames)
 
 
 finalData<-aggregate(. ~subject + activity, fullData, mean)
-finalData<-finalData[order(finalData$subject,finalData$activity),]
+finalData<- arrange(finalData, finalData$subject,finalData$activity)
 write.table(finalData, file = "tidyData.txt",row.name=FALSE)
